@@ -1,0 +1,35 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Dashboard</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="{% static 'js/options.js'%}" type="text/javascript"></script>	
+	<link href="static/css/style.css" rel="stylesheet" />
+	<script src="static/js/jquery.min.js"></script>
+</head>
+<body>
+	<div class="header">
+		<div class="center">
+			<h2>WELCOME TO HOME PAGE</h2>
+			<button onclick="my_Logout_Function()">LOGOUT</button>
+            <button onclick="my_Profile_Function()">PROFILE</button>
+		</div>
+	  </div>
+		<script>
+		function my_Logout_Function() {
+			url="https://"+admin.appName+".hub.loginradius.com/auth.aspx?action=logout&return_url=http://127.0.0.1:8000/logout/auth";
+			console.log(url)
+			location.replace(url)
+			//https://<LoginRadius Site Name>.hub.loginradius.com/auth.aspx?action=login&return_url=<Return URL>
+		}
+        function my_Profile_Function() {
+			url="https://"+admin.appName+".hub.loginradius.com/profile.aspx";
+			console.log(url)
+			location.replace(url)
+			//https://<LoginRadius Site Name>.hub.loginradius.com/auth.aspx?action=login&return_url=<Return URL>
+		}
+	</script>
+</body>
+</html>

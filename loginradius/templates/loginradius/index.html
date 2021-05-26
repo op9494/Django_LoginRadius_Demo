@@ -1,0 +1,44 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>9</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="{% static 'js/options.js'%}" type="text/javascript"></script>	
+	<link href="static/css/style.css" rel="stylesheet" />
+	<script src="static/js/jquery.min.js"></script>
+</head>
+<body>
+	<div class="header">
+		<div class="center">
+			<h2>MY TEST PAGE</h2>
+			<button onclick="my_Login_Function()">LOGIN</button>
+			<button onclick="my_Register_Function()">REGISTER</button>
+			<button onclick="my_forgot_Function()">FORGOT PASSWORD</button>
+		</div>
+	  </div>
+	
+		<script>
+		function my_Login_Function() {
+			url="https://"+admin.appName+".hub.loginradius.com/auth.aspx?action=login&return_url="+window.location.href+"login/auth"
+			console.log(url)
+			location.replace(url)
+	
+			//https://<LoginRadius Site Name>.hub.loginradius.com/auth.aspx?action=login&return_url=<Return URL>
+		}
+		function my_Register_Function(){
+			url="https://"+admin.appName+".hub.loginradius.com/auth.aspx?action=register&return_url="+window.location.href+"register/auth"
+			console.log(url)
+			location.replace(url)
+	
+		}
+		function my_forgot_Function() {
+			url="https://"+admin.appName+".hub.loginradius.com/auth.aspx?action=forgotpassword&return_url="+window.location.href+"fp/auth"
+			console.log(url)
+			location.replace(url)
+		}
+
+	</script>
+</body>
+</html>
