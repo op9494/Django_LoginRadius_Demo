@@ -2,20 +2,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>9</title>
+	<title>Mainpage</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="{% static 'js/options.js'%}" type="text/javascript"></script>	
-	<link href="static/css/style.css" rel="stylesheet" />
+	<link href="{% static 'css/style.css'%}" rel="stylesheet">
 	<script src="static/js/jquery.min.js"></script>
 </head>
 <body>
 	<div class="header">
 		<div class="center">
 			<h2>MY TEST PAGE</h2>
-			<button onclick="my_Login_Function()">LOGIN</button>
-			<button onclick="my_Register_Function()">REGISTER</button>
-			<button onclick="my_forgot_Function()">FORGOT PASSWORD</button>
+			<button onclick="my_Login_Function()" id="login_btn">LOGIN</button>
+			<button onclick="my_Register_Function()" id="reg_btn">REGISTER</button>
+			<button onclick="my_forgot_Function()" id="fgt_btn">FORGOT PASSWORD</button>
 		</div>
 	  </div>
 	

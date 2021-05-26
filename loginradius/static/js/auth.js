@@ -12,6 +12,7 @@ if(action=="login"){
     
     if(localStorage.getItem("lr-session-token") !=null && access_token!=""){
         window.location.href = maindomine + "dashboard";
+
     }
     else{
         window.location.href = maindomine ; 
@@ -31,7 +32,13 @@ if(action=="fp"){
         window.location.href = maindomine;
     }
     else{
-        alert("Sorry!! please try again")
+        if(localStorage.getItem("lr-session-token") !=null && access_token!=""){
+            alert("Some thing went Wrong")
+    
+        }
+        else{
+            alert("Please Logout and try again")
+        }
         window.location.href = maindomine;
     }
    

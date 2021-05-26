@@ -18,8 +18,7 @@ def auth(request,action):
           })
      elif action=="login":
           return render(request,"loginradius/auth.html",{
-
-               "msg":"login Sucessfull"
+               "msg":"Login Sucessfull"
           })
      elif action=="fp":
           return render(request,"loginradius/auth.html",{
