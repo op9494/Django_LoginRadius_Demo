@@ -29,14 +29,14 @@ python manage.py runserver
 To visit [MAIN RESOURCE PAGE](http://127.0.0.1:8000/)
 
 ## For Testing
- -Move on to test folder and run as below
+ - Move on to test folder and run as below
  ```
  python test.py
  ```
- -Install the selenium before it
- '''
+ - Install the selenium before it
+ ```
  Pip Run pip install -r requirements.txt 
- '''
+ ```
  It shows the result as below
  ```
  $ python test.py
