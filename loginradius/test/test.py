@@ -4,9 +4,12 @@ import time
 class DemoTestCase(unittest.TestCase):
     def setUp(self):
         self.browser = webdriver.Chrome('.\chromedriver.exe')
-        self.browser=webdriver.Firefox()
-        self.mailid="<MAIL ID>"#replace the new mail id
-        self.pwd="<PASSWORD>"#replace the test password
+        #self.browser=webdriver.Firefox()
+        #self.mailid="<MAIL ID>"#replace the new mail id
+        #self.pwd="<PASSWORD>"#replace the test password
+        self.mailid="rixeca9996@64ge.com"#replace the new mail id
+        self.pwd="Opk@1998"#replace the test password
+            
         self.addCleanup(self.browser.quit)
     
     def test_a_page_url(self): #Testing the Url of Two main pages using Their Title

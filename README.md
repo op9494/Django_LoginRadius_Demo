@@ -35,12 +35,11 @@ To visit [MAIN RESOURCE PAGE](http://127.0.0.1:8000/)
  ```
  -Install the selenium before it
  '''
- Pip install selinium
+ Pip Run pip install -r requirements.txt 
  '''
  It shows the result as below
  ```
  $ python test.py
-
 DevTools listening on ws://127.0.0.1:64276/devtools/browser/14833c42-fe29-4edf-8130-319394306deb
 ---Visted----http://127.0.0.1:8000/-------Mainpage----- 
 ---Visted----http://127.0.0.1:8000/dashboard-------Mainpage-----case studey In this it will load mainpage beacause of no login is done and directly requesting dashboard URL
